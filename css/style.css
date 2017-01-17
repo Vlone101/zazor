@@ -132,6 +132,7 @@ header {
     border-radius: 3px;
     background: linear-gradient(to bottom, rgba(87, 96, 104, 1) 0%, rgba(0, 0, 0, 1) 100%);
     box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, .3);
+    font-family: sans-serif;
 }
 
 .main-menu ul {
@@ -232,7 +233,6 @@ header {
     background: url('../img/arrow.png') no-repeat 100% 0;
     font: 11px Arial;
     box-shadow: inset 2px 2px 2px 0 rgba(8, 8, 8, .5);
-    -webkit-appearance: 0;
 }
 
 .search-container [type="checkbox"] {
@@ -242,7 +242,7 @@ header {
     padding-top: 1px;
     background: url('../img/checkbox.png') no-repeat -13px -13px;
     box-shadow: inset 2px 2px 2px 0 rgba(8, 8, 8, .5);
-    -webkit-appearance: 0;
+
 }
 
 .search-container [type="checkbox"]:checked {
@@ -644,7 +644,8 @@ header {
 
 .brands-filter {
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
+
 }
 
 .module-title-right {
@@ -699,11 +700,16 @@ header {
     background-position: -3px -3px;
 }
 
-.brands-filter p {
+.brands-filter label {
     padding-left: 5px;
     color: #465961;
     font-size: 13px;
     line-height: 25px;
+}
+
+.check-brands-flex {
+    display: flex;
+    flex-direction: column;
 }
 
 .btn-selection {
